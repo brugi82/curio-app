@@ -1,4 +1,4 @@
-https://dev.azure.com/milosbrugi/Curio/_apis/build/status/brugi82.curio-app?branchName=master
+![pipeline_status](https://dev.azure.com/milosbrugi/Curio/_apis/build/status/brugi82.curio-app?branchName=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
