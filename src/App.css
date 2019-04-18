@@ -53,12 +53,34 @@
   clear: both;
 }
 
-@media only screen and (max-width: 600px) {
+.nav-menu {
+  float: left;
+  line-height: 64px;
+}
+
+.user-menu {
+  float: right;
+}
+
+.user-menu-username {
+  margin-left: 10px;
+  
+}
+
+@media only screen and (max-width: 600) {
   .x-600 {
-    display: none
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .x-768 {
+    display: none;
   }
   
   ul > li > i.anticon.mobile-icon {
     margin-right: 0px;
   }
 }
+
+

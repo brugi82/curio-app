@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-import SimpleMeasureDisplay from '../common/simpleMeasureDisplay';
+import SimpleMeasureDisplay from '../common/SimpleMeasureDisplay';
 
 
 const AmbientMeasurement: React.FunctionComponent<{}> = () => {
