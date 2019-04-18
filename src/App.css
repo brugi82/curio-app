@@ -3,10 +3,12 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 24px 16px 0;
+  float: left;
 }
 
 .App-header {
@@ -50,3 +52,35 @@
 .Simple-measure-value-container {
   clear: both;
 }
+
+.nav-menu {
+  float: left;
+  line-height: 64px;
+}
+
+.user-menu {
+  float: right;
+}
+
+.user-menu-username {
+  margin-left: 10px;
+  
+}
+
+@media only screen and (max-width: 600) {
+  .x-600 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .x-768 {
+    display: none;
+  }
+  
+  ul > li > i.anticon.mobile-icon {
+    margin-right: 0px;
+  }
+}
+
+
