@@ -52,3 +52,13 @@
 .Simple-measure-value-container {
   clear: both;
 }
+
+@media only screen and (max-width: 600px) {
+  .x-600 {
+    display: none
+  }
+  
+  ul > li > i.anticon.mobile-icon {
+    margin-right: 0px;
+  }
+}
