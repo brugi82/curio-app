@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AmbientMeasurement from './components/ambient/AmbientMeasurement';
 import './App.css';
 import DashboardPage from './components/dashboard/DashboardPage';
 
