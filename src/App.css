@@ -75,7 +75,7 @@
     display: none;
   }
   
-  ul > li > i.anticon.mobile-icon {
+  ul > li > a > i.anticon.mobile-icon {
     margin-right: 0px;
   }
 }
