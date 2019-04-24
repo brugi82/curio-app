@@ -1,7 +1,4 @@
 @import '~antd/dist/antd.css';
-.App {
-  text-align: center;
-}
 
 .logo {
   width: 120px;
@@ -67,6 +64,10 @@
   
 }
 
+.item-value-label {
+  margin-bottom: 4px;
+}
+
 @media only screen and (max-width: 600) {
   .x-600 {
     display: none;
@@ -78,7 +79,7 @@
     display: none;
   }
   
-  ul > li > i.anticon.mobile-icon {
+  ul > li > a > i.anticon.mobile-icon {
     margin-right: 0px;
   }
 }

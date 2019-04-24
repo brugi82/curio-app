@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, Icon } from 'antd';
+import { Link, withRouter } from 'react-router-dom';
 
 const NavMenu: React.FunctionComponent<{}> = () => {
     return (
@@ -7,23 +8,29 @@ const NavMenu: React.FunctionComponent<{}> = () => {
             <Menu
                 theme="dark"
                 mode="horizontal"
-                defaultSelectedKeys={['1']}
+                selectedKeys={[location.pathname]}
                 className="nav-menu">
-                <Menu.Item key="1">
-                    <Icon type='home' className="mobile-icon"/>
-                    <span className="x-768">Home</span>
+                <Menu.Item key="/">
+                    <Link to="/">
+                        <Icon type='home' className="mobile-icon"/>
+                        <span className="x-768">Home</span>
+                    </Link>
                 </Menu.Item>
-                <Menu.Item key="2">
-                    <Icon type='experiment' className="mobile-icon"/>
-                    <span className="x-768">Ambient</span>
+                <Menu.Item key="/ambient">
+                    <Link to="/ambient">
+                        <Icon type='experiment' className="mobile-icon"/>
+                        <span className="x-768">Ambient</span>
+                    </Link>
                 </Menu.Item>
-                <Menu.Item key="3">
-                    <Icon type='bar-chart' className="mobile-icon"/>
-                    <span className="x-768">History</span>
+                <Menu.Item key="/history">
+                    <Link to="/history">
+                        <Icon type='bar-chart' className="mobile-icon"/>
+                        <span className="x-768">History</span>
+                    </Link>
                 </Menu.Item>
             </Menu>
         </div>
     )
 }
 
-export default NavMenu;
+export default withRouter(NavMenu);

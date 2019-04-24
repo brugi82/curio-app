@@ -1,17 +1,14 @@
 import React from 'react';
-import { Layout } from 'antd';
-import HeaderComponent from '../header/HeaderCompoment';
-
-const { Footer, Content } = Layout;
+import { Layout, Row } from 'antd';
+import Item from '../item/Item';
 
 const DashboardPage: React.FunctionComponent<{}> = () => {
     return (
-        <div>
-            <Layout style={{height:"100vh"}}>
-                <HeaderComponent/>
-                <Content>Test content</Content>
-                <Footer>Curio App ©2019 Created by Milos Petrovic</Footer>
-            </Layout>
+        <div style={{ padding: '30px' }}>
+            <Row gutter={16}>
+                <Item />
+                <Item />
+            </Row>
         </div>
     );
 }
